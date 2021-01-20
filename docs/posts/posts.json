@@ -1,0 +1,19 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to plots have I laid!",
+    "description": "Welcome to our my blog, plots have I laid. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Lorenzo Braschi",
+        "url": {}
+      }
+    ],
+    "date": "2021-01-19",
+    "categories": [],
+    "contents": "\n\nPlots have I laid, inductions dangerous, By drunken prophecies, libels and dreams\n(Richard III, I, 1, 32-33)\n\nSee Richard III in PlayShakespeare.com\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-01-19T18:58:53+01:00",
+    "input_file": "welcome.utf8.md"
+  }
+]

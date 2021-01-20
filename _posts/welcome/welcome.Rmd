@@ -1,0 +1,30 @@
+---
+title: "Welcome to plots have I laid!"
+description: |
+  Welcome to our my blog, plots have I laid. We hope you enjoy 
+  reading what we have to say!
+author:
+  - name: Lorenzo Braschi
+    affiliation: Roche IT
+date: 01-19-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating blogs with Distill at:
+# https://rstudio.github.io/distill/blog.html
+
+```
+
+> Plots have I laid, inductions dangerous, By drunken prophecies, libels and dreams
+>
+> (Richard III, I, 1, 32-33)
+
+<aside>
+See Richard III in [PlayShakespeare.com](https://www.playshakespeare.com/richard-iii/scenes/act-i-scene-1)
+</aside>
+
