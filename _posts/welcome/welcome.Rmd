@@ -25,6 +25,7 @@ knitr::opts_chunk$set(echo = FALSE)
 > (Richard III, I, 1, 32-33)
 
 <aside>
-See Richard III in [PlayShakespeare.com](https://www.playshakespeare.com/richard-iii/scenes/act-i-scene-1)
-</aside>
 
+See Richard III in [PlayShakespeare.com](https://www.playshakespeare.com/richard-iii/scenes/act-i-scene-1)
+
+</aside>
