@@ -29,3 +29,16 @@ knitr::opts_chunk$set(echo = FALSE)
 See Richard III in [PlayShakespeare.com](https://www.playshakespeare.com/richard-iii/scenes/act-i-scene-1)
 
 </aside>
+
+Welcome to my blog. I'm Lorenzo Braschi, a data scientist currently working at Roche. I'm currently based in Basel, Switzerland, although my main office is in Warsaw, Poland.
+
+I'm an enthusiast for all things R and have been using it irregularly for over 10 years now - before RStudio even existed. My interests lie all over the place, from modelling to visualisation, from NLP to cartography. As a result, I'm a bit of a jack-of-all-trades, master of none.
+
+
+This blog is my n-th attempt at writing things in R that I find interesting. One temptation to avoid is to try to write *the definitive guide* on X: a "post to kill all posts" of sorts, the kind of ultimate guide on a topic that will make all others unnecessary. This is a variation on the theme of "perfection paralysis": since all posts have to be perfect, you never write anything. Accepting incompleteness is a necessity for a writer - or almost any other profession.
+
+I hope you find my content interesting!
+
+```{r, fig.align='center'}
+knitr::include_graphics("lorenzo.jpg", dpi = 100)
+```

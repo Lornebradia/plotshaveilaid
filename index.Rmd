@@ -1,5 +1,5 @@
 ---
-title: "Plots have I laid"
+title: "Plots have I laid!"
 site: distill::distill_website
 listing: posts
 ---

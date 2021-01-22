@@ -11,9 +11,9 @@
     ],
     "date": "2021-01-19",
     "categories": [],
-    "contents": "\n\nPlots have I laid, inductions dangerous, By drunken prophecies, libels and dreams\n(Richard III, I, 1, 32-33)\n\nSee Richard III in PlayShakespeare.com\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-01-19T18:58:54+01:00",
-    "input_file": {}
+    "contents": "\n\nPlots have I laid, inductions dangerous, By drunken prophecies, libels and dreams\n(Richard III, I, 1, 32-33)\n\nSee Richard III in PlayShakespeare.com\nWelcome to my blog. I’m Lorenzo Braschi, a data scientist currently working at Roche. I’m currently based in Basel, Switzerland, although my main office is in Warsaw, Poland.\nI’m an enthusiast for all things R and have been using it irregularly for over 10 years now - before RStudio even existed. My interests lie all over the place, from modelling to visualisation, from NLP to cartography. As a result, I’m a bit of a jack-of-all-trades, master of none.\nThis blog is my n-th attempt at writing things in R that I find interesting. One temptation to avoid is to try to write the definitive guide on X: a “post to kill all posts” of sorts, the kind of ultimate guide on a topic that will make all others unnecessary. This is a variation on the theme of “perfection paralysis”: since all posts have to be perfect, you never write anything. Accepting incompleteness is a necessity for a writer - or almost any other profession.\nI hope you find my content interesting!\n\n\n\n\n\n\n",
+    "preview": "posts/welcome/lorenzo.jpg",
+    "last_modified": "2021-01-22T13:10:12+01:00",
+    "input_file": "welcome.utf8.md"
   }
 ]
