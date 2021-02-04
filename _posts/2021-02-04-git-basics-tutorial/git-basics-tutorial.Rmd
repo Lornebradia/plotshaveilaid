@@ -1,0 +1,76 @@
+---
+title: "Git basics tutorial"
+description: |
+  A brief git tutorial 
+author:
+  - name: Lorenzo Braschi
+    url: {}
+date: 02-04-2021
+output:
+  distill::distill_article:
+    self_contained: false
+draft: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(DiagrammeR)
+```
+
+This is my git tutorial. There are many others like it, but this one is mine. My git is my best friend. It brings my code to life. I must master it as I master my code.
+
+Without git, my code is useless. Without my code, my git is useless... OK, enough with Full Metal Jacket references.
+
+## What is git and why?
+
+Git is a **version control system** that relies on _snapshots_ to track changes in a directory containing different types of files. It is most useful for changes in text-based documents (but not only), and therefore, is especially well suited to track changes in code. 
+
+Does this sound familiar?
+
+```{r, fig.cap="From http://phdcomics.com/comics/archive.php?comicid=1531", out.extra="class=external", fig.width=8}
+knitr::include_graphics("phd101212s.gif")
+```
+
+
+The main challenge for this kind of work is that the development of a file is not entirely linear, as the comic above illustrates. Also, a common mistake is to try to capture the changes in the file metadata - in this case, in the name of the file. _And stick to a given convention_. Good luck with that. 
+
+In this tutorial we will introduce git from the command line. There are many IDEs and point and click versions but to me they can be more confusing than anything. For example, RStudio has an incorporated git manager, but I still find more useful to use the command line. 
+
+## Basic setup
+
+First things first, you need to have git installed. You only need to do this once per computer, and maybe git is already pre-installed in your computer by your administrator. Run the following command:
+
+```
+git --version
+```
+
+
+and if it returns a help page, you have git installed. If you have not done so before, you need to set up your git configuration first. This is simply a matter of introducing yourself to git, like any polite person would: 
+
+<aside>
+Check the documentation with `git config --help`. 
+</aside>
+
+```
+git config --global user.name "<your name>"
+git config --global user.email "<your email>"
+```
+
+Next think is decide which remote repository will you be pushing your code to. Git can be used just locally, without a remote, but it is really meant to be used with a remote repository. Three of the most popular remotes include: 
+
+* Bitbucket  
+* GitHub  
+* GitLab
+
+At Roche we use the three of them, specifically Enterprise versions of these. Independently of which one you are using (I recommend either GitHub or Gitlab), you need to link your local repository (the one in your computer) with the remote one. You can do it in a number of ways: 
+
+1. Create the repository in the remote, and then set up the remote in your local environment, 
+1. Set up the repository locally, then create 
+
+
+
+Basic commands
+
+Basics workflows
+
+Read more
