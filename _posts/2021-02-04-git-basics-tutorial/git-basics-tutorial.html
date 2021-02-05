@@ -53,35 +53,35 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ad0000; } /* Alert */
-code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
-code span.bn { color: #ad0000; } /* BaseN */
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
-code span.ch { color: #20794d; } /* Char */
-code span.cn { color: #8f5902; } /* Constant */
-code span.co { color: #5e5e5e; } /* Comment */
-code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-code span.dt { color: #ad0000; } /* DataType */
-code span.dv { color: #ad0000; } /* DecVal */
-code span.er { color: #ad0000; } /* Error */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
-code span.fl { color: #ad0000; } /* Float */
-code span.fu { color: #4758ab; } /* Function */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
 code span.im { } /* Import */
-code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
-code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
-code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
-code span.ss { color: #20794d; } /* SpecialString */
-code span.st { color: #20794d; } /* String */
-code span.va { color: #111111; } /* Variable */
-code span.vs { color: #20794d; } /* VerbatimString */
-code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
@@ -110,7 +110,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","draft"]}},"value":[{"type":"character","attributes":{},"value":["Git basics tutorial"]},{"type":"character","attributes":{},"value":["A brief git tutorial \n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Lorenzo Braschi"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["02-04-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]}]}]},{"type":"logical","attributes":{},"value":[true]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","draft"]}},"value":[{"type":"character","attributes":{},"value":["Git basics tutorial"]},{"type":"character","attributes":{},"value":["A brief git tutorial \n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Lorenzo Braschi"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["02-04-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth","highlight"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"character","attributes":{},"value":["pygments"]}]}]},{"type":"logical","attributes":{},"value":[false]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -1508,16 +1508,22 @@ Figure 1: From <a href="http://phdcomics.com/comics/archive.php?comicid=1531" cl
 <p>In this tutorial we will introduce git from the command line. There are many IDEs and point and click versions but to me they can be more confusing than anything. For example, RStudio has an incorporated git manager, but I still find more useful to use the command line.</p>
 <h2 id="basic-setup">Basic setup</h2>
 <p>First things first, you need to have git installed. You only need to do this once per computer, and maybe git is already pre-installed in your computer by your administrator. Run the following command:</p>
-<pre><code>git --version</code></pre>
-<p>and if it returns a help page, you have git installed. If you have not done so before, you need to set up your git configuration first. This is simply a matter of introducing yourself to git, like any polite person would:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> --version</span></code></pre></div>
+</div>
+<p>and if it does not return an error message, you have git installed. If you have not done so before, you need to set up your git configuration first. This is simply a matter of introducing yourself to git, like any polite person would:</p>
 <aside>
 Global configuration
 </aside>
-<pre><code>git config --global user.name &quot;&lt;your name&gt;&quot;
-git config --global user.email &quot;&lt;your email&gt;&quot;</code></pre>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config --global user.name <span class="st">&quot;&lt;your name&gt;&quot;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config --global user.email <span class="st">&quot;&lt;your email&gt;&quot;</span></span></code></pre></div>
+</div>
 <p>It may also be useful to set up SSH keys for ease of connection to the remote repository. Depending on your system, ssh keys can be generated directly in the terminal with the following command:</p>
-<pre><code>ssh-keygen</code></pre>
-<p>and save your private and public keys in your local computer (by default in <code>~/.ssh</code>). These keys will need to be copied to your remote repository. Next think is decide which remote repository will you be pushing your code to. Git can be used just locally, without a remote, but it is really meant to be used with a remote repository. Three of the most popular remotes include:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh-keygen</span></span></code></pre></div>
+</div>
+<p>and save your private and public keys in your local computer (by default in <code>~/.ssh</code>). These keys will need to be copied to your remote repository. Next think is decide which remote repository<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> will you be pushing your code to. Git can be used just locally, without a remote, but it is really meant to be used with a remote repository. Three of the most popular remotes include:</p>
 <ul>
 <li>Bitbucket<br />
 </li>
@@ -1525,27 +1531,31 @@ git config --global user.email &quot;&lt;your email&gt;&quot;</code></pre>
 </li>
 <li>GitLab</li>
 </ul>
-<p>Confusingly, the basic repositories are called <em>repositories</em> in GitHub and Bitbucket, but they are called <em>projects</em> in GitLab. But <em>projects</em> it GitHub are an optional feature of a <em>repository</em>, whereas in Bitbucket it’s something handled by JIRA, a project management tool.At Roche we use the three of them, specifically Enterprise versions of these.</p>
+<p>Confusingly, the basic repositories are called <em>repositories</em> in GitHub and Bitbucket, but they are called <em>projects</em> in GitLab. But <em>projects</em> in GitHub are an optional feature of a <em>repository</em>, whereas in Bitbucket it’s something handled by JIRA, a project management tool.At Roche we use the three of them, specifically Enterprise versions of these.</p>
+<p>Independently of which one you are using (I recommend either GitHub or Gitlab), you need to link your local repository (the one in your computer) with the remote one. You can do it in a number of ways:</p>
 <aside>
 Project configuration
 </aside>
-<p>Independently of which one you are using (I recommend either GitHub or Gitlab), you need to link your local repository (the one in your computer) with the remote one. You can do it in a number of ways:</p>
-<p>If you create a new repository:</p>
+<p>If you create a new repository in your upstream:</p>
 <aside>
 The default <code>master</code> branch has been renamed <code>main</code> on GitHub in 2020.
 </aside>
-<pre><code>git clone git@ssh.&lt;path-to-your-repo&gt;.git
-cd &lt;project directory&gt;
-git add .
-git commit -m &quot;First commit&quot;
-git push -u origin master</code></pre>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone git@ssh.<span class="op">&lt;</span>path-to-your-repo<span class="op">&gt;</span>.git</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="op">&lt;</span>project directory<span class="op">&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit -m <span class="st">&quot;First commit&quot;</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push -u origin master</span></code></pre></div>
+</div>
 <p>If your project already exists but it was never pushed to git:</p>
-<pre><code>cd &lt;project directory&gt;
-git init
-git remote add origin git@ssh.&lt;path-to-your-repo&gt;.git
-git add .
-git commit -m &quot;First commit&quot;
-git push -u origin master</code></pre>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="op">&lt;</span>project directory<span class="op">&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin git@ssh.<span class="op">&lt;</span>path-to-your-repo<span class="op">&gt;</span>.git</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit -m <span class="st">&quot;First commit&quot;</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push -u origin master</span></code></pre></div>
+</div>
 <h2 id="basic-commands">Basic commands</h2>
 <div class="layout-chunk" data-layout="l-body-outset">
 <table>
@@ -1591,34 +1601,61 @@ git push -u origin master</code></pre>
 </table>
 </div>
 <p>We have already seen a few commands already, but perhaps the most basic ones are the combination of <code>git add</code> and <code>git commit</code>:</p>
-<pre><code>git add &lt;file1&gt; &lt;file2&gt;... </code></pre>
-<p>or</p>
-<pre><code>git add .</code></pre>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="op">&lt;</span>file1<span class="op">&gt;</span> <span class="op">&lt;</span>file2<span class="op">&gt;</span>... </span></code></pre></div>
+</div>
+or
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span></code></pre></div>
+</div>
 <p>(for everything)</p>
 <p><code>git add</code> <em>stages</em> or includes the files to be added to be commit, and <code>git commit</code> commits the changes to the <strong>local</strong> repository.</p>
-<pre><code>git commit -m &quot;your message here&quot;</code></pre>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit -m <span class="st">&quot;your message here&quot;</span></span></code></pre></div>
+</div>
 <p>Git commit messages should be as descriptive as possible, while also being concise. If a message is not included in the command, you will be prompted to include a message.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-10"></span>
+<img src="https://imgs.xkcd.com/comics/git_commit.png" alt="From https://xkcd.com/1296/" class=external />
+<p class="caption">
+Figure 2: From <a href="https://xkcd.com/1296/" class="uri">https://xkcd.com/1296/</a>
+</p>
+</div>
+</div>
+<aside>
+Don’t be this guy
+</aside>
 <p>OK, now you have your changes committed to your local repository, so how do we include them in the remote repository? Why, with <code>git push</code> of course:</p>
-<pre><code>git push</code></pre>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div>
+</div>
 <p>You will get a nice message with what is being uploaded and how. And if there are any changes to the repository you need to pull them first from it into your local environment with:</p>
-<pre><code>git pull</code></pre>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull</span></code></pre></div>
+</div>
 <p>Easy, right?</p>
 <h2 id="working-with-branches">Working with branches</h2>
 <p>Well, not quite. We’ve been working so far with the <code>master</code> branch but actually working on a single branch is usually a Very Bad Idea (VBI for short). It is better to leave the <code>master</code> branch for the <em>official</em> or true &amp; tested (as far as possible) version of our work and work on short-lived branches.</p>
 <p>Essentially a branch is a parallel version of our work directory in which the files may differ - even being completely missing. Since git keeps track of the changes snapshop by snapshot (or commit by commit), it is possible to reconstruct the work the steps that separated one branch from another. More importantly, working on a branch separates new or experimental work from what we already consider <em>done</em> to avoid messing with it; in case we screw things up we can always checkout the main branch and discard the changes.</p>
 <p>Setting up a new branch is as easy as:</p>
-<pre><code>git checkout -b name_of_branch</code></pre>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout -b name_of_branch</span></code></pre></div>
+</div>
 <aside>
 Create a new local branch
 </aside>
-<p>Notice the flag <code>-b</code> is to create a new branch. As for branch names, the convention depends pretty much on the choice of remote: for Bitbucket when using JIRA, it is usually something like <code>PROD-11-Update-load-function</code>, where <code>PROD</code> is the project name and 11 the number of the issue. Similarly, in GitLab we would have <code>11-Update-load-function</code> for the same purpose. In GitHub for some odd reason you do not track the issue number with the name of the branch (but you can do it anyway) so it could be as simple as <code>Update-load-function</code>. <strong>The important thing is that the branch name is as descriptive as possible of the work done in the branch</strong>. So “Update-load-function” is a good name, even better if we include the number of an issue in a project in which it may be more detailed. “lorenzo-branchi”, although funny, is <em>definitely not</em> a good branch name because it does not adequately describe what is it about.</p>
+<p>Notice the flag <code>-b</code> is to create a new branch. As for branch names, the convention depends pretty much on the choice of remote: for Bitbucket when using JIRA, it is usually something like <code>PROD-11-Update-load-function</code>, where <code>PROD</code> is the project name and 11 the number of the issue. Similarly, in GitLab we would have <code>11-Update-load-function</code> for the same purpose. In GitHub for some odd reason you do not track the issue number with the name of the branch (but you can do it anyway) so it could be as simple as <code>Update-load-function</code>. <strong>The important thing is that the branch name is as descriptive as possible of the work done in the branch</strong>. So “Update-load-function” is a good name, even better if we include the number of an issue in a project in which it may be more detailed. <code>lorenzo-branchi</code>, although funny, is <em>definitely not</em> a good branch name because it does not adequately describe what is it about.</p>
 <p>There’s another thing to do: we need to push the branch to the remote repository so it exists there as well: we can do that with a simple command:</p>
-<pre><code>git push -u origin name_of_branch</code></pre>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push -u origin name_of_branch</span></code></pre></div>
+</div>
 <aside>
 Push a new local branch
 </aside>
 <p>A branch can also be created first in the remote repository and then checked out after running git pull; whichever you prefer is fine (but personally I find switching between my command line and the browser annoying). Once a branch is created, we are automatically in it. We can later switch branches with:</p>
-<pre><code>git checkout name_of_branch</code></pre>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout name_of_branch</span></code></pre></div>
+</div>
 <p>We won’t be usually allowed to change branches if there are uncommitted changes in our current branch, to avoid losing our work. This can be forced with a <code>--force</code> flag but it is not recommended. We can use the <code>git pull</code> and <code>git push</code> commands to update the remote repository with the changes to our branch.</p>
 <h4 id="good-practises-for-branches">Good practises for branches</h4>
 <aside>
@@ -1631,6 +1668,11 @@ Good practises for branches
 </ul>
 <div class="layout-chunk" data-layout="l-body-outset">
 <table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 49%" />
+<col style="width: 34%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Command</th>
@@ -1649,30 +1691,35 @@ Good practises for branches
 <td style="text-align: left;">Creates new branch</td>
 <td style="text-align: left;"><code>git checkout -b new_branch</code></td>
 </tr>
+<tr class="odd">
+<td style="text-align: left;"><code>git push -u</code></td>
+<td style="text-align: left;">Sets upstream branch and pushes commits to it</td>
+<td style="text-align: left;"><code>git push -u origin new_branch</code></td>
+</tr>
 </tbody>
 </table>
 </div>
 <h2 id="workflow">Workflow</h2>
 <p>Fine, so we have our master and we have our branch or branches. How should we organise the work? Welcome to the wondrous world of <em>workflows</em>. Essentially a git workflow is a way to organise the way you work with branches. You can start with what is sometimes called “no flow”: do not open new branches, do all commits to <code>master</code>. We have already seen why this might be a bad idea (a VBI actually), but it <em>might</em> fly for extremely simple work done by a single person, especially at the beginning. Essentially, this is like adding savings points to a linear progress, much like a videogame.</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-2"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-16"></span>
 <img src="https://files.programster.org/tutorials/git/flows/no-flow.png" alt="From https://blog.programster.org/git-workflows" class=external />
 <p class="caption">
-Figure 2: From <a href="https://blog.programster.org/git-workflows" class="uri">https://blog.programster.org/git-workflows</a>
+Figure 3: From <a href="https://blog.programster.org/git-workflows" class="uri">https://blog.programster.org/git-workflows</a>
 </p>
 </div>
 </div>
 <p>The only thing that is less-flowy than this way of working is to not add commits at any point - essentially not using git at all, really. It’s like playing a videogame without saving points, or writing a draft of a document without saving it until the very end. Reckless.</p>
 <p>A very common flow is one called “GitHub flow” which, despite the name, is not restricted to be used with GitHub (it’s just the flow that the developers of GitHub itself were allegedly using).</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-3"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-17"></span>
 <img src="https://files.programster.org/tutorials/git/flows/github-flow.png" alt="From https://blog.programster.org/git-workflows" class=external />
 <p class="caption">
-Figure 3: From <a href="https://blog.programster.org/git-workflows" class="uri">https://blog.programster.org/git-workflows</a>
+Figure 4: From <a href="https://blog.programster.org/git-workflows" class="uri">https://blog.programster.org/git-workflows</a>
 </p>
 </div>
 </div>
-<p>It may seem complicated, but it really isn’t: you have a <code>master</code> (or <code>main</code>) branch in which you start to work (typically, just “first commit” and maybe a few configurations more at most). Once you want to add a feature - a new function, modify/delete an existing one, upgrade, refactor, whatever, you open a new branch<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> and start working on it. Once you are done, you submit a Merge Request (or Pull Request, the naming may differ) and have someone else in the team review it (or yourself, later). If the review passes, then the code is merged with the <code>master/main</code> branch <em>and the feature branch is deleted</em>.</p>
+<p>It may seem complicated, but it really isn’t: you have a <code>master</code> (or <code>main</code>) branch in which you start to work (typically, just “first commit” and maybe a few configurations more at most). Once you want to add a feature - a new function, modify/delete an existing one, upgrade, refactor, whatever, you open a new branch<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> and start working on it. Once you are done, you submit a Merge Request (or Pull Request, the naming may differ) and have someone else in the team review it (or yourself, later). If the review passes, then the code is merged with the <code>master/main</code> branch <em>and the feature branch is deleted</em>.</p>
 <p>A bugfix branch is essentially the same as a feature branch, just that it is meant to fix an issue. It is not created in a different way and has no special properties. However, you can adopt the convention of naming your branches depending on what are they supposed to do by adding a prefix like <code>feature/&lt;name_of_branch&gt;</code> or <code>bugfix/&lt;name_of_branch&gt;</code>. This will be immediately informative of what a given branch is for, and sets the stage for complex workflows later (especially for the use of automated tools). But at the very basic level, it’s not really necessary.</p>
 <p>There are many other versions of flows. There’s Git flow, GitLab flow, OneFlow… and of course many other versions that go unnamed, usually modified from the basic ones. The important thing is that everyone in the team agrees on a specific flow, because that is how they are supposed to collaborate. Agreeing on a set of standards is good practise that avoids the flurry of emails and chats about “hey, can you approve my MR? am I supposed to merge my MR or rebase it? Or does the reviewer do that?” etc. If you’re anything like me you will hate those messages with a passion.</p>
 <h2 id="summary">Summary</h2>
@@ -1727,6 +1774,11 @@ Figure 3: From <a href="https://blog.programster.org/git-workflows" class="uri">
 <td style="text-align: left;">Creates new branch</td>
 <td style="text-align: left;"><code>git checkout -b new_branch</code></td>
 </tr>
+<tr class="even">
+<td style="text-align: left;"><code>git push -u</code></td>
+<td style="text-align: left;">Sets upstream branch and pushes commits to it</td>
+<td style="text-align: left;"><code>git push -u origin new_branch</code></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -1738,13 +1790,19 @@ Figure 3: From <a href="https://blog.programster.org/git-workflows" class="uri">
 </ul>
 <p>And remember:</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="https://imgs.xkcd.com/comics/git.png" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center"><span id="fig:xkcd"></span>
+<img src="https://imgs.xkcd.com/comics/git.png" alt="From https://xkcd.com/1597/" class=external />
+<p class="caption">
+Figure 5: From <a href="https://xkcd.com/1597/" class="uri">https://xkcd.com/1597/</a>
+</p>
+</div>
 </div>
 <div class="sourceCode" id="cb14"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1" role="doc-endnote"><p>called a feature branch<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1" role="doc-endnote"><p>Also called an upstream repository<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>called a feature branch<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <!--radix_placeholder_article_footer-->

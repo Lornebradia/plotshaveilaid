@@ -11,11 +11,12 @@ output:
     self_contained: false
     toc: true
     toc_depth: 2
-draft: true
+    highlight: pygments
+draft: false
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
+knitr::opts_chunk$set(echo = TRUE, fig.align = "center")
 library(DiagrammeR)
 ```
 
@@ -29,7 +30,7 @@ Git is a **version control system** that relies on _snapshots_ to track changes 
 
 Does this sound familiar?
 
-```{r, fig.cap="From http://phdcomics.com/comics/archive.php?comicid=1531", out.extra="class=external", fig.align='center'}
+```{r, fig.cap="From http://phdcomics.com/comics/archive.php?comicid=1531", out.extra="class=external", fig.align='center', echo=FALSE}
 knitr::include_graphics("phd101212s.gif", dpi = 10)
 ```
 
@@ -42,48 +43,49 @@ In this tutorial we will introduce git from the command line. There are many IDE
 
 First things first, you need to have git installed. You only need to do this once per computer, and maybe git is already pre-installed in your computer by your administrator. Run the following command:
 
-```
+```{bash, eval=FALSE}
 git --version
 ```
 
-and if it returns a help page, you have git installed. If you have not done so before, you need to set up your git configuration first. This is simply a matter of introducing yourself to git, like any polite person would: 
+and if it does not return an error message, you have git installed. If you have not done so before, you need to set up your git configuration first. This is simply a matter of introducing yourself to git, like any polite person would: 
 
 <aside>
 Global configuration
 </aside>
 
-```
+```{bash, eval = FALSE}
 git config --global user.name "<your name>"
 git config --global user.email "<your email>"
 ```
 
 It may also be useful to set up SSH keys for ease of connection to the remote repository. Depending on your system, ssh keys can be generated directly in the terminal with the following command: 
 
-```
+```{bash, eval=FALSE}
 ssh-keygen
 ```
 
-and save your private and public keys in your local computer (by default in `~/.ssh`). These keys will need to be copied to your remote repository. Next think is decide which remote repository will you be pushing your code to. Git can be used just locally, without a remote, but it is really meant to be used with a remote repository. Three of the most popular remotes include: 
+and save your private and public keys in your local computer (by default in `~/.ssh`). These keys will need to be copied to your remote repository. Next think is decide which remote repository^[Also called an upstream repository] will you be pushing your code to. Git can be used just locally, without a remote, but it is really meant to be used with a remote repository. Three of the most popular remotes include: 
 
 * Bitbucket  
 * GitHub  
 * GitLab
 
-Confusingly, the basic repositories are called _repositories_ in GitHub and Bitbucket, but they are called _projects_ in GitLab. But _projects_ it GitHub are an optional feature of a _repository_, whereas in Bitbucket it's something handled by JIRA, a project management tool.At Roche we use the three of them, specifically Enterprise versions of these. 
+Confusingly, the basic repositories are called _repositories_ in GitHub and Bitbucket, but they are called _projects_ in GitLab. But _projects_ in GitHub are an optional feature of a _repository_, whereas in Bitbucket it's something handled by JIRA, a project management tool.At Roche we use the three of them, specifically Enterprise versions of these. 
+
+
+Independently of which one you are using (I recommend either GitHub or Gitlab), you need to link your local repository (the one in your computer) with the remote one. You can do it in a number of ways: 
 
 <aside>
 Project configuration
 </aside>
 
-Independently of which one you are using (I recommend either GitHub or Gitlab), you need to link your local repository (the one in your computer) with the remote one. You can do it in a number of ways: 
-
-If you create a new repository: 
+If you create a new repository in your upstream: 
 
 <aside>
 The default `master` branch has been renamed `main` on GitHub in 2020.
 </aside>
 
-```
+```{bash, eval = FALSE}
 git clone git@ssh.<path-to-your-repo>.git
 cd <project directory>
 git add .
@@ -93,7 +95,7 @@ git push -u origin master
 
 If your project already exists but it was never pushed to git:
 
-```
+```{bash, eval = FALSE}
 cd <project directory>
 git init
 git remote add origin git@ssh.<path-to-your-repo>.git
@@ -104,7 +106,7 @@ git push -u origin master
 
 ## Basic commands
 
-```{r basic git table, echo = F, layout="l-body-outset"}
+```{r basic git table, echo = FALSE, layout="l-body-outset"}
 bct <- tibble::tribble(
   ~Command, ~Usage, ~Example, 
   "`git add`", "Stages changes to be committed", "`git add .`",
@@ -120,32 +122,40 @@ knitr::kable(bct)
 
 We have already seen a few commands already, but perhaps the most basic ones are the combination of `git add` and `git commit`: 
 
-```
+```{bash, eval = FALSE}
 git add <file1> <file2>... 
 ``` 
 or 
-```
+```{bash, eval = FALSE}
 git add .
 ```
 (for everything)
 
 `git add` _stages_ or includes the files to be added to be commit, and `git commit` commits the changes to the **local** repository. 
 
-```
+```{bash, eval = FALSE}
 git commit -m "your message here"
 ```
 
 Git commit messages should be as descriptive as possible, while also being concise. If a message is not included in the command, you will be prompted to include a message. 
 
+```{r, fig.cap="From https://xkcd.com/1296/", out.extra="class=external", fig.align='center', echo = FALSE}
+knitr::include_graphics("https://imgs.xkcd.com/comics/git_commit.png")
+```
+
+<aside>
+Don't be this guy
+</aside>
+
 OK, now you have your changes committed to your local repository, so how do we include them in the remote repository? Why, with `git push` of course: 
 
-```
+```{bash, eval = FALSE}
 git push
 ```
 
 You will get a nice message with what is being uploaded and how. And if there are any changes to the repository you need to pull them first from it into your local environment with:
 
-```
+```{bash, eval = FALSE}
 git pull
 ```
 
@@ -159,7 +169,7 @@ Essentially a branch is a parallel version of our work directory in which the fi
 
 Setting up a new branch is as easy as: 
 
-```
+```{bash, eval = FALSE}
 git checkout -b name_of_branch
 ```
 
@@ -167,11 +177,11 @@ git checkout -b name_of_branch
 Create a new local branch
 </aside>
 
-Notice the flag `-b` is to create a new branch. As for branch names, the convention depends pretty much on the choice of remote: for Bitbucket when using JIRA, it is usually something like `PROD-11-Update-load-function`, where `PROD` is the project name and 11 the number of the issue. Similarly, in GitLab we would have `11-Update-load-function` for the same purpose. In GitHub for some odd reason you do not track the issue number with the name of the branch (but you can do it anyway) so it could be as simple as `Update-load-function`. **The important thing is that the branch name is as descriptive as possible of the work done in the branch**. So "Update-load-function" is a good name, even better if we include the number of an issue in a project in which it may be more detailed. "lorenzo-branchi", although funny, is _definitely not_ a good branch name because it does not adequately describe what is it about. 
+Notice the flag `-b` is to create a new branch. As for branch names, the convention depends pretty much on the choice of remote: for Bitbucket when using JIRA, it is usually something like `PROD-11-Update-load-function`, where `PROD` is the project name and 11 the number of the issue. Similarly, in GitLab we would have `11-Update-load-function` for the same purpose. In GitHub for some odd reason you do not track the issue number with the name of the branch (but you can do it anyway) so it could be as simple as `Update-load-function`. **The important thing is that the branch name is as descriptive as possible of the work done in the branch**. So "Update-load-function" is a good name, even better if we include the number of an issue in a project in which it may be more detailed. `lorenzo-branchi`, although funny, is _definitely not_ a good branch name because it does not adequately describe what is it about. 
 
 There's another thing to do: we need to push the branch to the remote repository so it exists there as well: we can do that with a simple command: 
 
-```
+```{bash, eval = FALSE}
 git push -u origin name_of_branch
 ```
 
@@ -181,7 +191,7 @@ Push a new local branch
 
 A branch can also be created first in the remote repository and then checked out after running git pull; whichever you prefer is fine (but personally I find switching between my command line and the browser annoying). Once a branch is created, we are automatically in it. We can later switch branches with: 
 
-```
+```{bash, eval = FALSE}
 git checkout name_of_branch
 ```
 
@@ -197,11 +207,12 @@ Good practises for branches
 * Branches ___must die___. That is, branches should be relatively short lived and merge with the main branch as quickly as possible; if there's the need to revisit the issue then open a new branch later. Dragging a branch on for weeks (or rather, for commits) makes it harder to merge it later and almost guarantees you will have _merge issues later_. 
 
 
-```{r branches git table, layout="l-body-outset"}
+```{r branches git table, layout="l-body-outset", echo = FALSE}
 brct <- tibble::tribble(
   ~Command, ~Usage, ~Example, 
   "`git checkout`", "Switches to a given branch", "`git checkout master`",
-  "`git checkout`", "Creates new branch", "`git checkout -b new_branch`"
+  "`git checkout`", "Creates new branch", "`git checkout -b new_branch`", 
+  "`git push -u`", "Sets upstream branch and pushes commits to it", "`git push -u origin new_branch`"
   
 )
 
@@ -213,7 +224,7 @@ knitr::kable(brct)
 
 Fine, so we have our master and we have our branch or branches. How should we organise the work? Welcome to the wondrous world of _workflows_. Essentially a git workflow is a way to organise the way you work with branches. You can start with what is sometimes called "no flow": do not open new branches, do all commits to `master`. We have already seen why this might be a bad idea (a VBI actually), but it _might_ fly for extremely simple work done by a single person, especially at the beginning. Essentially, this is like adding savings points to a linear progress, much like a videogame. 
 
-```{r, fig.cap="From https://blog.programster.org/git-workflows", out.extra="class=external", fig.align='center'}
+```{r, fig.cap="From https://blog.programster.org/git-workflows", echo = FALSE, out.extra="class=external", fig.align='center'}
 knitr::include_graphics("https://files.programster.org/tutorials/git/flows/no-flow.png")
 ```
 
@@ -221,7 +232,7 @@ The only thing that is less-flowy than this way of working is to not add commits
 
 A very common flow is one called "GitHub flow" which, despite the name, is not restricted to be used with GitHub (it's just the flow that the developers of GitHub itself were allegedly using). 
 
-```{r,  fig.cap="From https://blog.programster.org/git-workflows", out.extra="class=external", fig.align='center'}
+```{r,  fig.cap="From https://blog.programster.org/git-workflows", out.extra="class=external", fig.align='center', echo=FALSE}
 knitr::include_graphics("https://files.programster.org/tutorials/git/flows/github-flow.png")
 ```
 
@@ -235,7 +246,7 @@ There are many other versions of flows. There's Git flow, GitLab flow, OneFlow..
 
 A quick summary table describing the git commands we've seen in this post. 
 
-```{r summary table, layout="l-page"}
+```{r summary table, layout="l-page", echo=FALSE}
 dplyr::bind_rows(
   bct, 
   brct) %>% 
@@ -253,7 +264,7 @@ We have barely scratched the surface of what git is about; we've left out basic 
 
 And remember: 
 
-```{r xkcd}
+```{r xkcd, fig.cap="From https://xkcd.com/1597/", out.extra="class=external", fig.align='center', echo=FALSE}
 knitr::include_graphics("https://imgs.xkcd.com/comics/git.png")
 ```
 
