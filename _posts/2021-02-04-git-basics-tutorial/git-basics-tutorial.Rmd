@@ -261,6 +261,7 @@ We have barely scratched the surface of what git is about; we've left out basic 
 
 - [The Git Book](https://git-scm.com/book/en/v2): kind of the basic manual for git, that contains _everything_ about it. It can be cumbersome to read (it gets really technical sometimes but it is exhaustive). 
 - [Happy Git and GitHub for the useR](https://happygitwithr.com/), an opinionated book on how to use git (focused on the R user, but applicable to anyone). 
+- [Learn Git Branching](https://learngitbranching.js.org/) an online hands-on tutorial that helps you visualise what happens when you branch. 
 
 And remember: 
 
