@@ -53,667 +53,71 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ad0000; } /* Alert */
-code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
-code span.bn { color: #ad0000; } /* BaseN */
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
-code span.ch { color: #20794d; } /* Char */
-code span.cn { color: #8f5902; } /* Constant */
-code span.co { color: #5e5e5e; } /* Comment */
-code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-code span.dt { color: #ad0000; } /* DataType */
-code span.dv { color: #ad0000; } /* DecVal */
-code span.er { color: #ad0000; } /* Error */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
-code span.fl { color: #ad0000; } /* Float */
-code span.fu { color: #4758ab; } /* Function */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
 code span.im { } /* Import */
-code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
-code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
-code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
-code span.ss { color: #20794d; } /* SpecialString */
-code span.st { color: #20794d; } /* String */
-code span.va { color: #111111; } /* Variable */
-code span.vs { color: #20794d; } /* VerbatimString */
-code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Plots have I laid!</title>
+  <title>Git basics tutorial</title>
+
+  <meta property="description" itemprop="description" content="A brief git tutorial"/>
 
 
-
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2021-02-04"/>
+  <meta property="article:created" itemprop="dateCreated" content="2021-02-04"/>
+  <meta name="article:author" content="Lorenzo Braschi"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Plots have I laid!"/>
+  <meta property="og:title" content="Git basics tutorial"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="A brief git tutorial"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Plots have I laid!"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Plots have I laid!"/>
+  <meta property="twitter:title" content="Git basics tutorial"/>
+  <meta property="twitter:description" content="A brief git tutorial"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Plots have I laid!"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","draft"]}},"value":[{"type":"character","attributes":{},"value":["Git basics tutorial"]},{"type":"character","attributes":{},"value":["A brief git tutorial \n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Lorenzo Braschi"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["02-04-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth","highlight"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"character","attributes":{},"value":["pygments"]}]}]},{"type":"logical","attributes":{},"value":[false]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["git-basics-tutorial_files/anchor-4.2.2/anchor.min.js","git-basics-tutorial_files/bowser-1.9.3/bowser.min.js","git-basics-tutorial_files/DiagrammeR-styles-0.2/styles.css","git-basics-tutorial_files/distill-2.2.21/template.v2.js","git-basics-tutorial_files/grViz-binding-1.0.6.1/grViz.js","git-basics-tutorial_files/header-attrs-2.6/header-attrs.js","git-basics-tutorial_files/htmlwidgets-1.5.3/htmlwidgets.js","git-basics-tutorial_files/jquery-1.11.3/jquery.min.js","git-basics-tutorial_files/popper-2.6.0/popper.min.js","git-basics-tutorial_files/tippy-6.2.7/tippy-bundle.umd.min.js","git-basics-tutorial_files/tippy-6.2.7/tippy-light-border.css","git-basics-tutorial_files/tippy-6.2.7/tippy.css","git-basics-tutorial_files/tippy-6.2.7/tippy.umd.min.js","git-basics-tutorial_files/viz-1.8.2/viz.js","git-basics-tutorial_files/webcomponents-2.0.0/webcomponents.js","phd101212s.gif"]}
+  </script>
   <!--radix_placeholder_navigation_in_header-->
-  <meta name="distill:offset" content=""/>
-
-  <script type="application/javascript">
-
-    window.headroom_prevent_pin = false;
-
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        tolerance: 5,
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
-  </script>
-
-  <style type="text/css">
-
-  /* Theme (user-documented overrideables for nav appearance) */
-
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #0F2E3D;
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .distill-site-nav a:hover {
-    color: white;
-  }
-
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-
-  .distill-site-header {
-
-  }
-
-  .distill-site-footer {
-
-  }
-
-
-  /* Site Header */
-
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-
-
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-
-  .distill-site-header .title {
-    font-size: 18px;
-    min-width: 150px;
-  }
-
-  .distill-site-header .logo {
-    padding: 0;
-  }
-
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-
-
-
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-
-
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-dropdown-active {
-    display: block;
-  }
-
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative; min-height: 500px; }
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-  /* Site Footer */
-
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  /* Headroom */
-
-  d-title {
-    padding-top: 6rem;
-  }
-
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-
-  .headroom--unpinned {
-    top: -100px;
-  }
-
-  .headroom--pinned {
-    top: 0;
-  }
-
-  /* adjust viewport for navbar height */
-  /* helps vertically center bootstrap (non-distill) content */
-  .min-vh-100 {
-    min-height: calc(100vh - 100px) !important;
-  }
-
-  </style>
-
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
-  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
-  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
-
-  <script type="application/javascript">
-
-  function getMeta(metaName) {
-    var metas = document.getElementsByTagName('meta');
-    for (let i = 0; i < metas.length; i++) {
-      if (metas[i].getAttribute('name') === metaName) {
-        return metas[i].getAttribute('content');
-      }
-    }
-    return '';
-  }
-
-  function offsetURL(url) {
-    var offset = getMeta('distill:offset');
-    return offset ? offset + '/' + url : url;
-  }
-
-  function createFuseIndex() {
-
-    // create fuse index
-    var options = {
-      keys: [
-        { name: 'title', weight: 20 },
-        { name: 'categories', weight: 15 },
-        { name: 'description', weight: 10 },
-        { name: 'contents', weight: 5 },
-      ],
-      ignoreLocation: true,
-      threshold: 0
-    };
-    var fuse = new window.Fuse([], options);
-
-    // fetch the main search.json
-    return fetch(offsetURL('search.json'))
-      .then(function(response) {
-        if (response.status == 200) {
-          return response.json().then(function(json) {
-            // index main articles
-            json.articles.forEach(function(article) {
-              fuse.add(article);
-            });
-            // download collections and index their articles
-            return Promise.all(json.collections.map(function(collection) {
-              return fetch(offsetURL(collection)).then(function(response) {
-                if (response.status === 200) {
-                  return response.json().then(function(articles) {
-                    articles.forEach(function(article) {
-                      fuse.add(article);
-                    });
-                  })
-                } else {
-                  return Promise.reject(
-                    new Error('Unexpected status from search index request: ' +
-                              response.status)
-                  );
-                }
-              });
-            })).then(function() {
-              return fuse;
-            });
-          });
-
-        } else {
-          return Promise.reject(
-            new Error('Unexpected status from search index request: ' +
-                        response.status)
-          );
-        }
-      });
-  }
-
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-
-    // get search element (bail if we don't have one)
-    var searchEl = window.document.getElementById('distill-search');
-    if (!searchEl)
-      return;
-
-    createFuseIndex()
-      .then(function(fuse) {
-
-        // make search box visible
-        searchEl.classList.remove('hidden');
-
-        // initialize autocomplete
-        var options = {
-          autoselect: true,
-          hint: false,
-          minLength: 2,
-        };
-        window.autocomplete(searchEl, options, [{
-          source: function(query, callback) {
-            const searchOptions = {
-              isCaseSensitive: false,
-              shouldSort: true,
-              minMatchCharLength: 2,
-              limit: 10,
-            };
-            var results = fuse.search(query, searchOptions);
-            callback(results
-              .map(function(result) { return result.item; })
-            );
-          },
-          templates: {
-            suggestion: function(suggestion) {
-              var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
-                ? `<img src="${offsetURL(suggestion.preview)}"</img>`
-                : '';
-              var html = `
-                <div class="search-item">
-                  <h3>${suggestion.title}</h3>
-                  <div class="search-item-description">
-                    ${suggestion.description || ''}
-                  </div>
-                  <div class="search-item-preview">
-                    ${img}
-                  </div>
-                </div>
-              `;
-              return html;
-            }
-          }
-        }]).on('autocomplete:selected', function(event, suggestion) {
-          window.location.href = offsetURL(suggestion.path);
-        });
-        // remove inline display style on autocompleter (we want to
-        // manage responsive display via css)
-        $('.algolia-autocomplete').css("display", "");
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-
-  });
-
-  </script>
-
-  <style type="text/css">
-
-  .nav-search {
-    font-size: x-small;
-  }
-
-  /* Algolioa Autocomplete */
-
-  .algolia-autocomplete {
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: sub;
-    background-color: white;
-    color: black;
-    padding: 6px;
-    padding-top: 8px;
-    padding-bottom: 0;
-    border-radius: 6px;
-    border: 1px #0F2E3D solid;
-    width: 180px;
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-nav .algolia-autocomplete {
-      display: none;
-      visibility: hidden;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete {
-      display: inline-block;
-      visibility: visible;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
-      margin-left: 0;
-      width: 400px;
-      max-height: 400px;
-    }
-  }
-
-  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
-    width: 90%;
-    outline: none;
-    border: none;
-  }
-
-  .algolia-autocomplete .aa-hint {
-    color: #999;
-  }
-  .algolia-autocomplete .aa-dropdown-menu {
-    width: 550px;
-    max-height: 70vh;
-    overflow-x: visible;
-    overflow-y: scroll;
-    padding: 5px;
-    margin-top: 3px;
-    margin-left: -150px;
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #999;
-    border-top: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
-    cursor: pointer;
-    padding: 5px 4px;
-    border-bottom: 1px solid #eee;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
-    border-bottom: none;
-    margin-bottom: 2px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
-    overflow: hidden;
-    font-size: 0.8em;
-    line-height: 1.4em;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
-    font-size: 1rem;
-    margin-block-start: 0;
-    margin-block-end: 5px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
-    display: inline-block;
-    overflow: hidden;
-    height: 2.8em;
-    width: 80%;
-    margin-right: 4%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
-    display: inline-block;
-    width: 15%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
-    height: 3em;
-    width: auto;
-    display: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
-    display: initial;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-    background-color: #eee;
-  }
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  </style>
-
-
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -2029,234 +1433,379 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
-  <script src="site_libs/popper-2.6.0/popper.min.js"></script>
-  <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
-  <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
-  <script src="site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
-  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="git-basics-tutorial_files/header-attrs-2.6/header-attrs.js"></script>
+  <script src="git-basics-tutorial_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="git-basics-tutorial_files/popper-2.6.0/popper.min.js"></script>
+  <link href="git-basics-tutorial_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="git-basics-tutorial_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="git-basics-tutorial_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="git-basics-tutorial_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="git-basics-tutorial_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="git-basics-tutorial_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="git-basics-tutorial_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
   <!--/radix_placeholder_site_in_header-->
 
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Plots have I laid!","authors":[]}
+{"title":"Git basics tutorial","description":"A brief git tutorial","authors":[{"author":"Lorenzo Braschi","authorURL":{},"affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-02-04T00:00:00.000+00:00","citationText":"Braschi, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a href="index.html" class="title">Plots have I laid!</a>
-<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
-</div>
-<div class="nav-right">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).load(function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-apply-limit l-page">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="Plots have I laid!">Plots have I laid!</h1>
-<a href="posts/2021-02-04-git-basics-tutorial/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Feb. 4, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Lorenzo Braschi</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Git basics tutorial</h2>
-<div class="dt-tags"></div>
-<p>A brief git tutorial</p>
-</div>
-</a>
-<a href="posts/welcome/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Jan. 19, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Lorenzo Braschi</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/welcome/lorenzo.jpg"/>
-</div>
-<div class="description">
-<h2>Welcome to plots have I laid!</h2>
-<div class="dt-tags"></div>
-<p>Welcome to our my blog, plots have I laid. We hope you enjoy 
-reading what we have to say!</p>
-</div>
-</a>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Plots have I laid!</h1>
+<h1>Git basics tutorial</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p><p>A brief git tutorial</p></p>
 </div>
 
+<div class="d-byline">
+  Lorenzo Braschi true 
+  
+<br/>02-04-2021
+</div>
 
 <div class="d-article">
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#what-is-git-and-why">What is git and why?</a></li>
+<li><a href="#basic-setup">Basic setup</a></li>
+<li><a href="#basic-commands">Basic commands</a></li>
+<li><a href="#working-with-branches">Working with branches</a></li>
+<li><a href="#workflow">Workflow</a></li>
+<li><a href="#summary">Summary</a></li>
+<li><a href="#read-more">Read more</a></li>
+</ul>
+</nav>
+</div>
+<p>This is my git tutorial. There are many others like it, but this one is mine. My git is my best friend. It brings my code to life. I must master it as I master my code.</p>
+<p>Without git, my code is useless. Without my code, my git is useless… OK, enough with Full Metal Jacket references.</p>
+<h2 id="what-is-git-and-why">What is git and why?</h2>
+<p>Git is a <strong>version control system</strong> that relies on <em>snapshots</em> to track changes in a directory containing different types of files. It is most useful for changes in text-based documents (but not only), and therefore, is especially well suited to track changes in code.</p>
+<p>Does this sound familiar?</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-1"></span>
+<img src="phd101212s.gif" alt="From http://phdcomics.com/comics/archive.php?comicid=1531" class=external />
+<p class="caption">
+Figure 1: From <a href="http://phdcomics.com/comics/archive.php?comicid=1531" class="uri">http://phdcomics.com/comics/archive.php?comicid=1531</a>
+</p>
+</div>
+</div>
+<p>The main challenge for this kind of work is that the development of a file is not entirely linear, as the comic above illustrates. Also, a common mistake is to try to capture the changes in the file metadata - in this case, in the name of the file. <em>And stick to a given convention</em>. Good luck with that.</p>
+<p>In this tutorial we will introduce git from the command line. There are many IDEs and point and click versions but to me they can be more confusing than anything. For example, RStudio has an incorporated git manager, but I still find more useful to use the command line.</p>
+<h2 id="basic-setup">Basic setup</h2>
+<p>First things first, you need to have git installed. You only need to do this once per computer, and maybe git is already pre-installed in your computer by your administrator. Run the following command:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> --version</span></code></pre></div>
+</div>
+<p>and if it does not return an error message, you have git installed. If you have not done so before, you need to set up your git configuration first. This is simply a matter of introducing yourself to git, like any polite person would:</p>
+<aside>
+Global configuration
+</aside>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config --global user.name <span class="st">&quot;&lt;your name&gt;&quot;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config --global user.email <span class="st">&quot;&lt;your email&gt;&quot;</span></span></code></pre></div>
+</div>
+<p>It may also be useful to set up SSH keys for ease of connection to the remote repository. Depending on your system, ssh keys can be generated directly in the terminal with the following command:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh-keygen</span></span></code></pre></div>
+</div>
+<p>and save your private and public keys in your local computer (by default in <code>~/.ssh</code>). These keys will need to be copied to your remote repository. Next think is decide which remote repository<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> will you be pushing your code to. Git can be used just locally, without a remote, but it is really meant to be used with a remote repository. Three of the most popular remotes include:</p>
+<ul>
+<li>Bitbucket<br />
+</li>
+<li>GitHub<br />
+</li>
+<li>GitLab</li>
+</ul>
+<p>Confusingly, the basic repositories are called <em>repositories</em> in GitHub and Bitbucket, but they are called <em>projects</em> in GitLab. But <em>projects</em> in GitHub are an optional feature of a <em>repository</em>, whereas in Bitbucket it’s something handled by JIRA, a project management tool.At Roche we use the three of them, specifically Enterprise versions of these.</p>
+<p>Independently of which one you are using (I recommend either GitHub or Gitlab), you need to link your local repository (the one in your computer) with the remote one. You can do it in a number of ways:</p>
+<aside>
+Project configuration
+</aside>
+<p>If you create a new repository in your upstream:</p>
+<aside>
+The default <code>master</code> branch has been renamed <code>main</code> on GitHub in 2020.
+</aside>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone git@ssh.<span class="op">&lt;</span>path-to-your-repo<span class="op">&gt;</span>.git</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="op">&lt;</span>project directory<span class="op">&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit -m <span class="st">&quot;First commit&quot;</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push -u origin master</span></code></pre></div>
+</div>
+<p>If your project already exists but it was never pushed to git:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="op">&lt;</span>project directory<span class="op">&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin git@ssh.<span class="op">&lt;</span>path-to-your-repo<span class="op">&gt;</span>.git</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit -m <span class="st">&quot;First commit&quot;</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push -u origin master</span></code></pre></div>
+</div>
+<h2 id="basic-commands">Basic commands</h2>
+<div class="layout-chunk" data-layout="l-body-outset">
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 57%" />
+<col style="width: 31%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Command</th>
+<th style="text-align: left;">Usage</th>
+<th style="text-align: left;">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>git add</code></td>
+<td style="text-align: left;">Stages changes to be committed</td>
+<td style="text-align: left;"><code>git add .</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>git commit</code></td>
+<td style="text-align: left;">Commits changes to the local repository</td>
+<td style="text-align: left;"><code>git commit -m "Added table summary"</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>git status</code></td>
+<td style="text-align: left;">Returns the current status of the branch</td>
+<td style="text-align: left;"><code>git status</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>git push</code></td>
+<td style="text-align: left;">Push the commits to the remote repository</td>
+<td style="text-align: left;"><code>git push</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>git pull</code></td>
+<td style="text-align: left;">Retrieves the changes of the remote branch into your local repository</td>
+<td style="text-align: left;"><code>git pull</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>We have already seen a few commands already, but perhaps the most basic ones are the combination of <code>git add</code> and <code>git commit</code>:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="op">&lt;</span>file1<span class="op">&gt;</span> <span class="op">&lt;</span>file2<span class="op">&gt;</span>... </span></code></pre></div>
+</div>
+or
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span></code></pre></div>
+</div>
+<p>(for everything)</p>
+<p><code>git add</code> <em>stages</em> or includes the files to be added to be commit, and <code>git commit</code> commits the changes to the <strong>local</strong> repository.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit -m <span class="st">&quot;your message here&quot;</span></span></code></pre></div>
+</div>
+<p>Git commit messages should be as descriptive as possible, while also being concise. If a message is not included in the command, you will be prompted to include a message.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-10"></span>
+<img src="https://imgs.xkcd.com/comics/git_commit.png" alt="From https://xkcd.com/1296/" class=external />
+<p class="caption">
+Figure 2: From <a href="https://xkcd.com/1296/" class="uri">https://xkcd.com/1296/</a>
+</p>
+</div>
+</div>
+<aside>
+Don’t be this guy
+</aside>
+<p>OK, now you have your changes committed to your local repository, so how do we include them in the remote repository? Why, with <code>git push</code> of course:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div>
+</div>
+<p>You will get a nice message with what is being uploaded and how. And if there are any changes to the repository you need to pull them first from it into your local environment with:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull</span></code></pre></div>
+</div>
+<p>Easy, right?</p>
+<h2 id="working-with-branches">Working with branches</h2>
+<p>Well, not quite. We’ve been working so far with the <code>master</code> branch but actually working on a single branch is usually a Very Bad Idea (VBI for short). It is better to leave the <code>master</code> branch for the <em>official</em> or true &amp; tested (as far as possible) version of our work and work on short-lived branches.</p>
+<p>Essentially a branch is a parallel version of our work directory in which the files may differ - even being completely missing. Since git keeps track of the changes snapshop by snapshot (or commit by commit), it is possible to reconstruct the work the steps that separated one branch from another. More importantly, working on a branch separates new or experimental work from what we already consider <em>done</em> to avoid messing with it; in case we screw things up we can always checkout the main branch and discard the changes.</p>
+<p>Setting up a new branch is as easy as:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout -b name_of_branch</span></code></pre></div>
+</div>
+<aside>
+Create a new local branch
+</aside>
+<p>Notice the flag <code>-b</code> is to create a new branch. As for branch names, the convention depends pretty much on the choice of remote: for Bitbucket when using JIRA, it is usually something like <code>PROD-11-Update-load-function</code>, where <code>PROD</code> is the project name and 11 the number of the issue. Similarly, in GitLab we would have <code>11-Update-load-function</code> for the same purpose. In GitHub for some odd reason you do not track the issue number with the name of the branch (but you can do it anyway) so it could be as simple as <code>Update-load-function</code>. <strong>The important thing is that the branch name is as descriptive as possible of the work done in the branch</strong>. So “Update-load-function” is a good name, even better if we include the number of an issue in a project in which it may be more detailed. <code>lorenzo-branchi</code>, although funny, is <em>definitely not</em> a good branch name because it does not adequately describe what is it about.</p>
+<p>There’s another thing to do: we need to push the branch to the remote repository so it exists there as well: we can do that with a simple command:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push -u origin name_of_branch</span></code></pre></div>
+</div>
+<aside>
+Push a new local branch
+</aside>
+<p>A branch can also be created first in the remote repository and then checked out after running git pull; whichever you prefer is fine (but personally I find switching between my command line and the browser annoying). Once a branch is created, we are automatically in it. We can later switch branches with:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout name_of_branch</span></code></pre></div>
+</div>
+<p>We won’t be usually allowed to change branches if there are uncommitted changes in our current branch, to avoid losing our work. This can be forced with a <code>--force</code> flag but it is not recommended. We can use the <code>git pull</code> and <code>git push</code> commands to update the remote repository with the changes to our branch.</p>
+<h4 id="good-practises-for-branches">Good practises for branches</h4>
+<aside>
+Good practises for branches
+</aside>
+<ul>
+<li>Branches should be used to work on one feature/fix <strong><em>and one only</em></strong>. Working on two separate issues at the same time is in general a VBI. Do it only if two issues are <em>extremely related</em>.<br />
+</li>
+<li>Branches <strong><em>must die</em></strong>. That is, branches should be relatively short lived and merge with the main branch as quickly as possible; if there’s the need to revisit the issue then open a new branch later. Dragging a branch on for weeks (or rather, for commits) makes it harder to merge it later and almost guarantees you will have <em>merge issues later</em>.</li>
+</ul>
+<div class="layout-chunk" data-layout="l-body-outset">
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 49%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Command</th>
+<th style="text-align: left;">Usage</th>
+<th style="text-align: left;">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>git checkout</code></td>
+<td style="text-align: left;">Switches to a given branch</td>
+<td style="text-align: left;"><code>git checkout master</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>git checkout</code></td>
+<td style="text-align: left;">Creates new branch</td>
+<td style="text-align: left;"><code>git checkout -b new_branch</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>git push -u</code></td>
+<td style="text-align: left;">Sets upstream branch and pushes commits to it</td>
+<td style="text-align: left;"><code>git push -u origin new_branch</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="workflow">Workflow</h2>
+<p>Fine, so we have our master and we have our branch or branches. How should we organise the work? Welcome to the wondrous world of <em>workflows</em>. Essentially a git workflow is a way to organise the way you work with branches. You can start with what is sometimes called “no flow”: do not open new branches, do all commits to <code>master</code>. We have already seen why this might be a bad idea (a VBI actually), but it <em>might</em> fly for extremely simple work done by a single person, especially at the beginning. Essentially, this is like adding savings points to a linear progress, much like a videogame.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-16"></span>
+<img src="https://files.programster.org/tutorials/git/flows/no-flow.png" alt="From https://blog.programster.org/git-workflows" class=external />
+<p class="caption">
+Figure 3: From <a href="https://blog.programster.org/git-workflows" class="uri">https://blog.programster.org/git-workflows</a>
+</p>
+</div>
+</div>
+<p>The only thing that is less-flowy than this way of working is to not add commits at any point - essentially not using git at all, really. It’s like playing a videogame without saving points, or writing a draft of a document without saving it until the very end. Reckless.</p>
+<p>A very common flow is one called “GitHub flow” which, despite the name, is not restricted to be used with GitHub (it’s just the flow that the developers of GitHub itself were allegedly using).</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-17"></span>
+<img src="https://files.programster.org/tutorials/git/flows/github-flow.png" alt="From https://blog.programster.org/git-workflows" class=external />
+<p class="caption">
+Figure 4: From <a href="https://blog.programster.org/git-workflows" class="uri">https://blog.programster.org/git-workflows</a>
+</p>
+</div>
+</div>
+<p>It may seem complicated, but it really isn’t: you have a <code>master</code> (or <code>main</code>) branch in which you start to work (typically, just “first commit” and maybe a few configurations more at most). Once you want to add a feature - a new function, modify/delete an existing one, upgrade, refactor, whatever, you open a new branch<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> and start working on it. Once you are done, you submit a Merge Request (or Pull Request, the naming may differ) and have someone else in the team review it (or yourself, later). If the review passes, then the code is merged with the <code>master/main</code> branch <em>and the feature branch is deleted</em>.</p>
+<p>A bugfix branch is essentially the same as a feature branch, just that it is meant to fix an issue. It is not created in a different way and has no special properties. However, you can adopt the convention of naming your branches depending on what are they supposed to do by adding a prefix like <code>feature/&lt;name_of_branch&gt;</code> or <code>bugfix/&lt;name_of_branch&gt;</code>. This will be immediately informative of what a given branch is for, and sets the stage for complex workflows later (especially for the use of automated tools). But at the very basic level, it’s not really necessary.</p>
+<p>There are many other versions of flows. There’s Git flow, GitLab flow, OneFlow… and of course many other versions that go unnamed, usually modified from the basic ones. The important thing is that everyone in the team agrees on a specific flow, because that is how they are supposed to collaborate. Agreeing on a set of standards is good practise that avoids the flurry of emails and chats about “hey, can you approve my MR? am I supposed to merge my MR or rebase it? Or does the reviewer do that?” etc. If you’re anything like me you will hate those messages with a passion.</p>
+<h2 id="summary">Summary</h2>
+<p>A quick summary table describing the git commands we’ve seen in this post.</p>
+<div class="layout-chunk" data-layout="l-page">
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 56%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Command</th>
+<th style="text-align: left;">Usage</th>
+<th style="text-align: left;">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>git add</code></td>
+<td style="text-align: left;">Stages changes to be committed</td>
+<td style="text-align: left;"><code>git add .</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>git commit</code></td>
+<td style="text-align: left;">Commits changes to the local repository</td>
+<td style="text-align: left;"><code>git commit -m "Added table summary"</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>git status</code></td>
+<td style="text-align: left;">Returns the current status of the branch</td>
+<td style="text-align: left;"><code>git status</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>git push</code></td>
+<td style="text-align: left;">Push the commits to the remote repository</td>
+<td style="text-align: left;"><code>git push</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>git pull</code></td>
+<td style="text-align: left;">Retrieves the changes of the remote branch into your local repository</td>
+<td style="text-align: left;"><code>git pull</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>git checkout</code></td>
+<td style="text-align: left;">Switches to a given branch</td>
+<td style="text-align: left;"><code>git checkout master</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>git checkout</code></td>
+<td style="text-align: left;">Creates new branch</td>
+<td style="text-align: left;"><code>git checkout -b new_branch</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>git push -u</code></td>
+<td style="text-align: left;">Sets upstream branch and pushes commits to it</td>
+<td style="text-align: left;"><code>git push -u origin new_branch</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="read-more">Read more</h2>
+<p>We have barely scratched the surface of what git is about; we’ve left out basic but not quite elementary topics such as inspecting changes <code>git log</code> and<code>git diff</code>, solving merge conflicts, the classical tug-of-war between merging and rebasing branches, automated CI/CD pipelines, and much more. It is highly recommended to have a look at the vast amounts of info about git that exist online. Some selections include:</p>
+<ul>
+<li><a href="https://git-scm.com/book/en/v2">The Git Book</a>: kind of the basic manual for git, that contains <em>everything</em> about it. It can be cumbersome to read (it gets really technical sometimes but it is exhaustive).</li>
+<li><a href="https://happygitwithr.com/">Happy Git and GitHub for the useR</a>, an opinionated book on how to use git (focused on the R user, but applicable to anyone).</li>
+<li><a href="https://learngitbranching.js.org/">Learn Git Branching</a> an online hands-on tutorial that helps you visualise what happens when you branch.</li>
+</ul>
+<p>And remember:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure" style="text-align: center"><span id="fig:xkcd"></span>
+<img src="https://imgs.xkcd.com/comics/git.png" alt="From https://xkcd.com/1597/" class=external />
+<p class="caption">
+Figure 5: From <a href="https://xkcd.com/1597/" class="uri">https://xkcd.com/1597/</a>
+</p>
+</div>
+</div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>Also called an upstream repository<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>called a feature branch<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
