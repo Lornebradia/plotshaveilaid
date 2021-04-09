@@ -39,6 +39,6 @@ This blog is my n-th attempt at writing things in R that I find interesting. One
 
 I hope you find my content interesting!
 
-```{r, fig.align='center'}
+```{r, fig.align='center', fig.width=4}
 knitr::include_graphics("lorenzo.jpg", dpi = 100)
 ```
