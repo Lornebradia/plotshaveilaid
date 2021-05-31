@@ -1,0 +1,16 @@
+---
+title: "Rockstar data science"
+description: |
+  A rant about 'the sexiest job of the 21st century'
+author:
+  - name: Lorenzo Braschi
+    url: {}
+date: 05-31-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+I want to rant a little about the figure of the "rockstar data scientist". 
+
+
