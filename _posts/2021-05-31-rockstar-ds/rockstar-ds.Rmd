@@ -11,6 +11,56 @@ output:
     self_contained: false
 ---
 
-I want to rant a little about the figure of the "rockstar data scientist". 
+```{r, echo=FALSE, layout="l-screen", fig.align='center', fig.cap = "Figure from Austin Neill on [Unsplash](https://unsplash.com/@arstyy)"}
+knitr::include_graphics("rockstar-ds.jpeg")
+```
+
+
+Every company on Earth wants to hire so called "rockstar data scientist", but what are they? Where do you find them? A rockstar data scientist is supposedly a brilliant data scientist, skilled at all things data sciencey, and single handedly capable of driving company value to the skies. 
+
+They are also a myth.^[Well, if not _actually_ a myth, then extraordinarily rare and expensive.] 
+
+What are the qualities that make a data scientist a "rockstar data scientist"? It's never too clear, but it is something around the lines of "the best of the best". But "best" is not really an absolute quality; it's more a relative one. _Best at doing what?_ And this is kind of the point, as in many occasions business don't have quite a ready answer as to _what_ would this rockstar data scientist be doing except, well, ___rock___. 
+
+<aside>
+Businesses that lack a clear roadmap for data science should fix that before they go hunting for "rockstar" data scientists - or even pedestrian ones. 
+</aside>
+
+Such a rockstar should be, among other things: 
+
+* A master of databases and data engineering, capable of solving the mess of the company's database and extract from it the key insights, while at the same time validating the company's data strategy so far and reassure them that they haven't wasted their time and resources hoarding every possible record in their database and somehow also discarding important data crucial to their business. 
+
+<aside>
+Yes, this has happened to me. No, it wasn't pretty
+</aside>
+
+* A super modeller, capable of writing in many different languages models for everything in a data science workbook: from classical parametric models to the latest craze in deep learning, 
+
+(continue rant on super skills): 
+
+- Deployment
+- Communication
+- Belly dancing with data
+
+(point out that this skillset is going to be hard to fit into a single human brain, and human brains are single threaded, so it's better to use a team and parallelise as much as possible). 
+
+Also if you are looking for a single person to do all sorts of stuff you're not looking for a rockstar, you're looking for a one-man orchestra
+
+```{r, echo=FALSE, fig.align='center'}
+knitr::include_graphics("orchestra-man.jpg")
+```
+
+<aside>
+That's simultaneously an impressive display of skill and a bit of a goofy one
+</aside>
+
+## Data science bands
+
+There is another reason to get a team, and that is that rockstar data scientists don't play alone, they play in _bands_. 
+
+Think of everything a _true_ rocktar gets: sure, they call the shots and boss everyone around, but they still need a band. Supporting musicians, stage designers, even caterers and roadies. These may be bossed around by the rockstar, and _might_ be replaceable, but the valuable ones are not. And a rockstar has a total control of who plays with them; once hired for a concert, a rockstar hires the team to their liking (or hire someone to hire the team to the rockstar's liking). 
+
+Does a prospective "rockstar data scientist" have the same kind of power? Is the company willing to give this "rockstar" full design power? 
+
 
 

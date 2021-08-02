@@ -23,6 +23,7 @@
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
@@ -116,7 +117,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["orchestra-man.jpg","rockstar-ds_files/anchor-4.2.2/anchor.min.js","rockstar-ds_files/bowser-1.9.3/bowser.min.js","rockstar-ds_files/distill-2.2.21/template.v2.js","rockstar-ds_files/header-attrs-2.8/header-attrs.js","rockstar-ds_files/jquery-1.11.3/jquery.min.js","rockstar-ds_files/popper-2.6.0/popper.min.js","rockstar-ds_files/tippy-6.2.7/tippy-bundle.umd.min.js","rockstar-ds_files/tippy-6.2.7/tippy-light-border.css","rockstar-ds_files/tippy-6.2.7/tippy.css","rockstar-ds_files/tippy-6.2.7/tippy.umd.min.js","rockstar-ds_files/webcomponents-2.0.0/webcomponents.js","rockstar-ds.jpeg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2040,7 +2041,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.8/header-attrs.js"></script>
+  <script src="../../site_libs/header-attrs-2.9.1/header-attrs.js"></script>
   <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2100,8 +2101,55 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="d-article">
-<p>I want to rant a little about the figure of the “rockstar data scientist”</p>
+<div class="layout-chunk" data-layout="l-screen">
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-1"></span>
+<img src="rockstar-ds.jpeg" alt="Figure from Austin Neill on [Unsplash](https://unsplash.com/@arstyy)"  />
+<p class="caption">
+Figure 1: Figure from Austin Neill on <a href="https://unsplash.com/@arstyy">Unsplash</a>
+</p>
+</div>
+</div>
+<p>Every company on Earth wants to hire so called “rockstar data scientist”, but what are they? Where do you find them? A rockstar data scientist is supposedly a brilliant data scientist, skilled at all things data sciencey, and single handedly capable of driving company value to the skies.</p>
+<p>They are also a myth.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>What are the qualities that make a data scientist a “rockstar data scientist”? It’s never too clear, but it is something around the lines of “the best of the best”. But “best” is not really an absolute quality; it’s more a relative one. <em>Best at doing what?</em> And this is kind of the point, as in many occasions business don’t have quite a ready answer as to <em>what</em> would this rockstar data scientist be doing except, well, <strong><em>rock</em></strong>.</p>
+<aside>
+Businesses that lack a clear roadmap for data science should fix that before they go hunting for “rockstar” data scientists - or even pedestrian ones.
+</aside>
+<p>Such a rockstar should be, among other things:</p>
+<ul>
+<li>A master of databases and data engineering, capable of solving the mess of the company’s database and extract from it the key insights, while at the same time validating the company’s data strategy so far and reassure them that they haven’t wasted their time and resources hoarding every possible record in their database and somehow also discarding important data crucial to their business.</li>
+</ul>
+<aside>
+Yes, this has happened to me. No, it wasn’t pretty
+</aside>
+<ul>
+<li>A super modeller, capable of writing in many different languages models for everything in a data science workbook: from classical parametric models to the latest craze in deep learning,</li>
+</ul>
+<p>(continue rant on super skills):</p>
+<ul>
+<li>Deployment</li>
+<li>Communication</li>
+<li>Belly dancing with data</li>
+</ul>
+<p>(point out that this skillset is going to be hard to fit into a single human brain, and human brains are single threaded, so it’s better to use a team and parallelise as much as possible).</p>
+<p>Also if you are looking for a single person to do all sorts of stuff you’re not looking for a rockstar, you’re looking for a one-man orchestra</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="orchestra-man.jpg" style="display: block; margin: auto;" /></p>
+</div>
+<aside>
+That’s simultaneously an impressive display of skill and a bit of a goofy one
+</aside>
+<h2 id="data-science-bands">Data science bands</h2>
+<p>There is another reason to get a team, and that is that rockstar data scientists don’t play alone, they play in <em>bands</em>.</p>
+<p>Think of everything a <em>true</em> rocktar gets: sure, they call the shots and boss everyone around, but they still need a band. Supporting musicians, stage designers, even caterers and roadies. These may be bossed around by the rockstar, and <em>might</em> be replaceable, but the valuable ones are not. And a rockstar has a total control of who plays with them; once hired for a concert, a rockstar hires the team to their liking (or hire someone to hire the team to the rockstar’s liking).</p>
+<p>Does a prospective “rockstar data scientist” have the same kind of power? Is the company willing to give this “rockstar” full design power?</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>Well, if not <em>actually</em> a myth, then extraordinarily rare and expensive.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
