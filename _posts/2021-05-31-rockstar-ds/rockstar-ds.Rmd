@@ -1,7 +1,7 @@
 ---
 title: "Rockstar data science"
 description: |
-  A rant about 'the sexiest job of the 21st century'
+  A discussion about 'the sexiest job of the 21st century'
 author:
   - name: Lorenzo Braschi
     url: {}
@@ -31,27 +31,23 @@ Such a rockstar should be, among other things:
 * A master of databases and data engineering, capable of solving the mess of the company's database and extract from it the key insights, while at the same time validating the company's data strategy so far and reassure them that they haven't wasted their time and resources hoarding every possible record in their database and somehow also discarding important data crucial to their business. 
 
 <aside>
-Yes, this has happened to me. No, it wasn't pretty
+Yes, this has happened to me. No, it wasn't fun.
 </aside>
 
-* A super modeller, capable of writing in many different languages models for everything in a data science workbook: from classical parametric models to the latest craze in deep learning, 
+* A super modeller, capable of writing in many different languages models for everything in a data science workbook: from classical parametric models to the latest craze in deep learning, automated solutions, etc. 
 
-(continue rant on super skills): 
+* A competent software engineer as well, master of deployment, capable of mounting whatever ML solution into an evergrowing range of cloud and/or on prems options. 
 
-- Deployment
-- Communication
-- Belly dancing with data
+* Of course a brilliant communicator, with the oratory of the ancients, capable of making entire business meetings weep with beautiful graphs and brilliant explanations, no matter what's the technical background of the audience. 
 
-(point out that this skillset is going to be hard to fit into a single human brain, and human brains are single threaded, so it's better to use a team and parallelise as much as possible). 
-
-Also if you are looking for a single person to do all sorts of stuff you're not looking for a rockstar, you're looking for a one-man orchestra
+It is extremely unlikely that this skillset will fit an indivudual human brain. And even if it somehow does, a single person will only be capable of doing a single thing at a time! Also if you are looking for a single person to do all sorts of stuff you're not looking for a rockstar, you're looking for a one-man orchestra.
 
 ```{r, echo=FALSE, fig.align='center'}
 knitr::include_graphics("orchestra-man.jpg")
 ```
 
 <aside>
-That's simultaneously an impressive display of skill and a bit of a goofy one
+That's simultaneously an impressive display of skill and a bit of a goofy one.
 </aside>
 
 ## Data science bands
